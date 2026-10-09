@@ -8,7 +8,6 @@ group = mod_group_id
 
 repositories {
     mavenLocal()
-    maven { url = 'https://maven.minecraftforge.net/' }
 
 }
 
@@ -29,7 +28,6 @@ fabricApi {
 
 dependencies {
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
-    implementation "com.github.glitchfiend:TerraBlender-fabric:${minecraft_version}-${terrablender_version}"
     implementation "net.fabricmc:fabric-loader:${project.loader_version}"
     implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
 
@@ -82,8 +80,7 @@ processResources {
             "mod_authors": mod_authors,
             "loader_version": loader_version,
             "minecraft_version_range": minecraft_version_range,
-            "minecraft_version": minecraft_version,
-            "terrablender_version":terrablender_version
+            "minecraft_version": minecraft_version
     ]
     inputs.properties(props)
 

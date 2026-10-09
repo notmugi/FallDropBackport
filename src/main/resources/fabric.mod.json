@@ -19,10 +19,7 @@
     ],
     "main": [
       "net.tearpelato.falldrop_backport.FallDropBackport"
-    ],
-    "terrablender":[
-    "net.tearpelato.falldrop_backport.FallDropBackport"
-]
+    ]
   },
   "mixins": [
     "falldrop_backport.mixins.json"
@@ -30,8 +27,7 @@
   "depends": {
     "fabricloader": ">=${loader_version}",
     "fabric-api": "*",
-    "minecraft": "${minecraft_version}",
-    "terrablender": "$terrablender_version"
+    "minecraft": "${minecraft_version}"
   },
   "custom": {
     "catalogue": {
